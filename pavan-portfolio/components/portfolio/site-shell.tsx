@@ -1,5 +1,7 @@
 import { ArrowUpRight, Download } from "lucide-react";
 export const EMAIL = "pavankumarkola752@gmail.com";
+const RESUME_URL =
+  "https://docs.google.com/document/d/1hQqFIrXMGJ83W41Q8Zz4DXlxh0vaYKha/edit?usp=sharing&ouid=118300977444325497257&rtpof=true&sd=true";
 export function ProfessionalLinks() {
   return (
     <div
@@ -24,18 +26,20 @@ export function ProfessionalLinks() {
       </a>
       <a
         className="resume-link"
-        href="/resume/Pavan_Kumar_Kola_Resume.pdf"
+        href={RESUME_URL}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="View résumé PDF in a new tab"
+        aria-label="View résumé in a new tab"
       >
         View résumé
         <ArrowUpRight aria-hidden="true" />
       </a>
       <a
         className="resume-link"
-        href="/resume/Pavan_Kumar_Kola_Resume.pdf"
-        download="Pavan_Kumar_Kola_Resume.pdf"
+        href={RESUME_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Open résumé in a new tab"
       >
         <Download aria-hidden="true" />
         Download résumé <span>(PDF)</span>
